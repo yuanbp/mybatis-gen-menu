@@ -1,3 +1,6 @@
+import java.time.LocalDateTime
+import java.time.format.DateTimeFormatter
+
 plugins {
     id 'java'
     id 'org.jetbrains.intellij' version '0.4.2'
@@ -31,7 +34,22 @@ patchPluginXml {
 }
 
 String date2Version() {
-    Date date = new Date();
-    String dates = date.format("yyyyMMddhhmm", TimeZone.getTimeZone("UTC"));
-    return dates;
+//    Date date = new Date()
+//    String dates = date.format("yyyyMMddHHmm", TimeZone.getTimeZone("UTC"))
+//    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMddHHmm")
+//    LocalDateTime timeNow = LocalDateTime.now()
+//    String dates = dateTimeFormatter.format(timeNow)
+//    return dates
+
+//    Date date = new Date()
+//    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss")
+//    String version = dateFormat.format(date)
+//    return version
+
+//    String version = System.currentTimeMillis()
+
+    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMddHHmm")
+    LocalDateTime timeNow = LocalDateTime.now()
+    String version = dateTimeFormatter.format(timeNow)
+    return version
 }
