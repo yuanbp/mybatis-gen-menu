@@ -1,12 +1,14 @@
 <idea-plugin>
     <id>chieftain.mybatis.mybatis-gen-menu</id>
     <name>Mybatis-Gen-Menu</name>
-    <vendor email="yuanbp0912@163.com" url="http://www.chieftain.com">chieftain</vendor>
+    <vendor email="yuanbp0912@163.com" url="https://github.com/yuanbp/mybatis-gen-menu">chieftain</vendor>
 
-    <description><![CDATA[
-    在Project视图中添加右键菜单(MybatisGen),在 Mybatis Generator 配置文件上右键,选择MybatisGen,根据配置文件生成内容.<br>
-    <em>:-)</em>
-    ]]></description>
+    <description>
+        <![CDATA[
+            在 Project 视图中添加右键菜单 (MybatisGen),在 Mybatis Generator 配置文件上右键,选择 MybatisGen ,根据配置文件生成内容.<br>
+            <em>:-)</em>
+        ]]>
+    </description>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
