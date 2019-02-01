@@ -23,7 +23,7 @@
         <action id="Mybatis.Generator" class="org.mybatis.gen.actions.MybatisGen" text="MybatisGen" description="MybatisGen">
             <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
-        <action id="chieftain.editor.mybatisgen" class="org.mybatis.gen.actions.EditorMybatisGen" text="MybatisGen" description="EditorMybatisGen">
+        <action id="Editor.Mybatis.Generator" class="org.mybatis.gen.actions.MybatisGen" text="MybatisGen" description="EditorMybatisGen">
             <add-to-group group-id="EditorPopupMenu" anchor="last"/>
         </action>
     </actions>
