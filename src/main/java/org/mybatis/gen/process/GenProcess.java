@@ -12,6 +12,7 @@ import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
+import org.mybatis.framework.beanmanage.Component;
 import org.mybatis.gen.utils.FileUtil;
 import org.mybatis.generator.api.MyBatisGenerator;
 import org.mybatis.generator.config.Configuration;
@@ -29,6 +30,7 @@ import java.util.List;
  * @author chieftain
  * @create 2019-02-01 17:36
  */
+@Component
 public class GenProcess {
 
     private Project project;

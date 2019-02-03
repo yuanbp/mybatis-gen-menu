@@ -2,6 +2,8 @@ package org.mybatis.gen.actions;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
+import org.mybatis.framework.beanmanage.Component;
+import org.mybatis.framework.beanmanage.Inject;
 import org.mybatis.gen.process.GenProcess;
 
 /**
@@ -10,11 +12,14 @@ import org.mybatis.gen.process.GenProcess;
  *
  * @author chieftain on 2019-02-01
  */
+@Component
 public class EditorMybatisGen extends AnAction {
+
+    @Inject
+    private GenProcess genProcess;
 
     @Override
     public void actionPerformed(AnActionEvent event) {
-        GenProcess genProcess = GenProcess.getGenProcess();
         genProcess.process(event);
     }
 }
