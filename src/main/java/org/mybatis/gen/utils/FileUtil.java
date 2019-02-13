@@ -1,9 +1,4 @@
-package org.mybatis.gen.utils;/**
- * org.mybatis.gen.utils [workset]
- * Created by chieftain on 2019-01-31
- *
- * @author chieftain on 2019-01-31
- */
+package org.mybatis.gen.utils;
 
 import java.io.File;
 

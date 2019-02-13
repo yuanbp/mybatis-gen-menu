@@ -1,9 +1,4 @@
-package org.mybatis.gen.process;/**
- * org.mybatis.gen.process [workset]
- * Created by chieftain on 2019-02-01
- *
- * @author chieftain on 2019-02-01
- */
+package org.mybatis.gen.process;
 
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.DataContext;

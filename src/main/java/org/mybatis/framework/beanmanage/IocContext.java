@@ -1,9 +1,4 @@
-package org.mybatis.framework.beanmanage;/**
- * org.mybatis.framework.beanmanage [workset]
- * Created by chieftain on 2019-02-03
- *
- * @author chieftain on 2019-02-03
- */
+package org.mybatis.framework.beanmanage;
 
 import org.mybatis.framework.utils.IocUtil;
 
