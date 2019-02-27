@@ -28,6 +28,8 @@ intellij {
 }
 patchPluginXml {
     changeNotes """
+      Add a right-click menu (MybatisGen) in the Project view, right-click on the Mybatis Generator configuration file, select MybatisGen, and generate content based on the configuration file.<br>
+      Add MybatisGen to the editor's context menu.<br>
       在Project视图中添加右键菜单(MybatisGen),在 Mybatis Generator 配置文件上右键,选择MybatisGen,根据配置文件生成内容.<br>
       在编辑器的右键菜单中加入MybatisGen.<br>
       <em>:-)</em>"""
