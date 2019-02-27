@@ -5,6 +5,7 @@
 
     <description>
         <![CDATA[
+            Add a right-click menu (MybatisGen) in the Project view, right-click on the Mybatis Generator configuration file, select MybatisGen, and generate content based on the configuration file.<br>
             在 Project 视图中添加右键菜单 (MybatisGen),在 Mybatis Generator 配置文件上右键,选择 MybatisGen ,根据配置文件生成内容.<br>
             <em>:-)</em>
         ]]>
