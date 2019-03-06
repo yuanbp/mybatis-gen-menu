@@ -4,6 +4,7 @@ import java.time.format.DateTimeFormatter
 plugins {
     id 'java'
     id 'org.jetbrains.intellij' version '0.4.2'
+    id "net.ltgt.errorprone" version "0.7.1"
 }
 
 group 'chieftain.mybatis'
@@ -20,11 +21,11 @@ repositories {
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
     compile group: 'org.mybatis.generator', name: 'mybatis-generator-core', version: '1.3.7'
-
 }
 
 intellij {
     version '2018.3.4'
+    type 'IC'
 }
 patchPluginXml {
     changeNotes """
@@ -36,20 +37,6 @@ patchPluginXml {
 }
 
 String date2Version() {
-//    Date date = new Date()
-//    String dates = date.format("yyyyMMddHHmm", TimeZone.getTimeZone("UTC"))
-//    DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMddHHmm")
-//    LocalDateTime timeNow = LocalDateTime.now()
-//    String dates = dateTimeFormatter.format(timeNow)
-//    return dates
-
-//    Date date = new Date()
-//    SimpleDateFormat dateFormat = new SimpleDateFormat("yyyyMMddHHmmss")
-//    String version = dateFormat.format(date)
-//    return version
-
-//    String version = System.currentTimeMillis()
-
     DateTimeFormatter dateTimeFormatter = DateTimeFormatter.ofPattern("yyyyMMddHHmm")
     LocalDateTime timeNow = LocalDateTime.now()
     String version = dateTimeFormatter.format(timeNow)
